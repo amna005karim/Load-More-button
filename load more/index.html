@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <!-- custom css file link  -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Our daily Posts</h1>
+        <div class="box-container">
+            <div class="box">
+                 <div class="image">
+                    <img src="images/pic-1.png" alt="">
+                 </div>
+                 <div class="content">
+                    <h3>Blog title goes here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero?</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 23rd.june 2021</span>
+                        <span> <i class="fas fa-user"></i> bt admin</span>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                   <img src="images/pic-2.png" alt="">
+                </div>
+                <div class="content">
+                   <h3>Blog title goes here</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero?</p>
+                   <a href="#" class="btn">read more</a>
+                   <div class="icons">
+                       <span> <i class="fas fa-calendar"></i> 23rd.june 2021</span>
+                       <span> <i class="fas fa-user"></i> bt admin</span>
+                   </div>
+                </div>
+           </div>
+
+           <div class="box">
+            <div class="image">
+               <img src="images/pic-3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Blog title goes here</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero?</p>
+               <a href="#" class="btn">read more</a>
+               <div class="icons">
+                   <span> <i class="fas fa-calendar"></i> 23rd.june 2021</span>
+                   <span> <i class="fas fa-user"></i> bt admin</span>
+               </div>
+            </div>
+       </div>
+
+       <div class="box">
+        <div class="image">
+           <img src="images/pic-4.png" alt="">
+        </div>
+        <div class="content">
+           <h3>Blog title goes here</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero?</p>
+           <a href="#" class="btn">read more</a>
+           <div class="icons">
+               <span> <i class="fas fa-calendar"></i> 23rd.june 2021</span>
+               <span> <i class="fas fa-user"></i> bt admin</span>
+           </div>
+        </div>
+   </div>
+
+   <div class="box">
+    <div class="image">
+       <img src="images/pic-5.png" alt="">
+    </div>
+    <div class="content">
+       <h3>Blog title goes here</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero?</p>
+       <a href="#" class="btn">read more</a>
+       <div class="icons">
+           <span> <i class="fas fa-calendar"></i> 23rd.june 2021</span>
+           <span> <i class="fas fa-user"></i> bt admin</span>
+       </div>
+    </div>
+</div>
+
+<div class="box">
+    <div class="image">
+       <img src="images/pic-6.png" alt="">
+    </div>
+    <div class="content">
+       <h3>Blog title goes here</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero?</p>
+       <a href="#" class="btn">read more</a>
+       <div class="icons">
+           <span> <i class="fas fa-calendar"></i> 23rd.june 2021</span>
+           <span> <i class="fas fa-user"></i> bt admin</span>
+       </div>
+    </div>
+</div>
+
+<div class="box">
+    <div class="image">
+       <img src="images/pic-4.png" alt="">
+    </div>
+    <div class="content">
+       <h3>Blog title goes here</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero?</p>
+       <a href="#" class="btn">read more</a>
+       <div class="icons">
+           <span> <i class="fas fa-calendar"></i> 23rd.june 2021</span>
+           <span> <i class="fas fa-user"></i> bt admin</span>
+       </div>
+    </div>
+</div>
+
+<div class="box">
+    <div class="image">
+       <img src="images/pic-1.png" alt="">
+    </div>
+    <div class="content">
+       <h3>Blog title goes here</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero?</p>
+       <a href="#" class="btn">read more</a>
+       <div class="icons">
+           <span> <i class="fas fa-calendar"></i> 23rd.june 2021</span>
+           <span> <i class="fas fa-user"></i> bt admin</span>
+       </div>
+    </div>
+</div>
+
+<div class="box">
+    <div class="image">
+       <img src="images/pic-2.png" alt="">
+    </div>
+    <div class="content">
+       <h3>Blog title goes here</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero?</p>
+       <a href="#" class="btn">read more</a>
+       <div class="icons">
+           <span> <i class="fas fa-calendar"></i> 23rd.june 2021</span>
+           <span> <i class="fas fa-user"></i> bt admin</span>
+       </div>
+    </div>
+</div>
+        </div>
+        <div id="load-more">Load More</div>
+    </div>
+    <!-- javaScript -->
+    <script>
+        let loadMoreBtn = document.querySelector('#load-more');
+        let currentItem = 3;
+
+        loadMoreBtn.onclick =() =>{
+            let boxes =[...document.querySelectorAll('.container .box-container .box')];
+            for(var i = currentItem;i < currentItem + 3; i++){
+                boxes[i].style.display = 'inline-block';
+            }
+            currentItem +=3;
+
+            if (currentItem >= boxes.length){
+                loadMoreBtn.style.display='none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
